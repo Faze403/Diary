@@ -83,6 +83,3 @@ def generate_diary(answers):
     diary_content = response['choices'][0]['message']['content'].strip()
     return diary_content
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
