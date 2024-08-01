@@ -208,7 +208,7 @@ def utility_processor():
 @app.route('/')
 def index():
     random_questions_group = random.choice([random_questions, random_questions2, random_questions3, random_questions4])
-    selected_random_questions = random.sample(random_questions_group, 2)  # 랜덤 질문 2개 선택
+    selected_random_questions = random.sample(random_questions_group, 6)  # 랜덤 질문 2개 선택
     return render_template('index.html', fixed_questions=fixed_questions, random_questions=selected_random_questions)
 
 
